@@ -1,0 +1,100 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full screen center */
+body {
+    min-height: 100vh;
+    background: url(./pexels-ithalu-907485.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* App wrapper */
+.app {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Glass card */
+.glass-card {
+    max-width: 380px;
+    margin: auto;
+    padding: 30px 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title */
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Input */
+#city {
+    width: 100%;
+    padding: 11px 26px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Button */
+.btn {
+    width: 40px;
+    height: 40px;
+    transform: translateY(5px);
+    background: linear-gradient(135deg,#FCBFC5,#ff9fba);
+    border-radius: 50%;
+    border: none;
+    transition: 0.3s;
+}
+.ri-search-line{
+    color: #fff;
+    font-size: 18px;
+}
+#result {
+    margin-top: 20px;
+    color: #fff;
+}
+
+#result img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+#result p {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .glass-card {
+        padding: 25px 20px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+}
